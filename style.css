@@ -208,8 +208,61 @@
     border-radius: 0.5rem;
     cursor: pointer;
   }
+
   
-  @media (min-width: 460px) {
+  .imgg img{
+    width: 100%;
+    border-radius: 2vh;
+  }
+
+  .text{
+    display: flex;
+    font-size: clamp(2rem,1px,3rem);
+    align-items: center;
+    justify-content: space-between;
+    margin: 2vh 0;
+  }
+  .text h1,p{
+    font-weight: 300;
+  }
+
+  .how-we-work .svg svg{
+width: 5rem;
+aspect-ratio: 1/1;
+  }
+  .how-we-work .working h1{
+    font-size: 3rem;
+    font-weight: 300;
+  }
+  .how-we-work .working p {
+    font-size: 4rem;
+    font-weight: 500;
+  }
+  .para{
+    font-size: 2rem;
+  }
+  .how-we-work button{
+    padding: 1rem 2rem;
+    margin: 2vh 0;
+    background-color: black;
+    color: white;
+    border-radius: 1vh;
+    font-size: 1.1rem;
+  }
+
+  .how-we-work video{
+    width: 100%;
+  }
+
+  .our-values{
+    display: grid;
+    place-items: center;
+    font-size: 4rem;
+    letter-spacing: -1px;
+    font-weight: 500;
+  }
+  
+  @media (min-width: 600px) {
     main {
       padding: 1.5rem 5rem;
     }
@@ -250,6 +303,51 @@
     main .we-do-section .work-section {
       width: 65vw;
     }
+    
+    .image-section{
+      display: grid;
+      width: 100%;
+      gap: 2vh;
+      grid-template-areas: 
+      "a a"
+      "b c"
+      "d e"
+      ;
+    }
+    .image-1{
+      grid-area: a;
+    }
+    .image-2{
+      grid-area: b;
+    }
+    .image-2 img{
+      max-width: 100%;
+    }
+    .image-3{
+      grid-area: c;
+    }
+    .image-3 img{
+      max-width: 100%;
+    }
+    .image-4{
+      grid-area: d;
+    }
+    .image-4 img{
+      max-width: 100%;
+    }
+    .image-5{
+      grid-area: e;
+    }
+    .image-5 img{
+      max-width: 100%;
+    }
+    .text{
+      align-items: center;
+      font-size: 1.4rem;
+    }
+    
+
+
   }
   @media (min-width: 1200px) {
     html {
